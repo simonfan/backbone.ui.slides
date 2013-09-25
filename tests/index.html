@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Module boilerplate</title>
+	
+	<!-- Set a script tag to define unit as FALSE, so that the demo page is run -->
+	<script type="text/javascript">
+		window.__unit = false;
+		window.__demo = true;
+	</script>
+
+	<script type="text/javascript" data-main="main.js" src="components/requirejs/require.js"></script>
+
+
+
+	<style type="text/css">
+
+		body, html {
+			height: 100%;
+			margin: 0;
+		}
+		#frame {
+			width: 40%;
+			height: 100%;
+
+			background-color: red;
+
+			overflow: hidden;
+
+			position: relative;
+		}
+
+		#frame .slider {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+
+		#frame .slider .slide {
+			width: 100%;
+			height: 100%;
+		}
+
+
+		#frame .slide:nth-child(1) {
+			background-color: green;
+		}
+
+		#frame .slide:nth-child(2) {
+			background-color: blue;
+		}
+
+		#frame .slide:nth-child(3) {
+			background-color: yellow;
+		}
+
+		#frame .slide:nth-child(4) {
+			background-color: gray;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- Slides -->
+	<div id="frame">
+		<div class="slider">
+			<div class="slide" id="first"></div>
+			<div class="slide" id="second"></div>
+			<div class="slide" id="third"></div>
+			<div class="slide" id="fourth"></div>
+		</div>
+	</div>
+	<!-- Slides -->
+
+	<br>
+	<a href="tests.html">Go to unit tests</a>
+	
+</body>
+
+</html>
