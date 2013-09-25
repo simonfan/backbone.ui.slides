@@ -5,21 +5,21 @@ function($      , Bakcbone , undef      ) {
 
 		initialize: function(options) {
 
-			_.bindAll(this,'_setupSlider');
+			_.bindAll(this,'update');
 
 			/**
 			 * The slides wrapper element
 			 */
 			this.$slider = typeof options.slider === 'string' ? this.$el.find(options.slider) : options.slider;
-			this._setupSlider();
+			this.update();
 
 			/**
 			 * Listen to resize events on the window
 			 */
-			$(window).resize(this._setupSlider);
+			$(window).resize(this.update);
 		},
 
-		_setupSlider: function() {
+		update: function() {
 			var slideWidth = this.$el.width(),
 				$slides = this.$slider.children();
 
