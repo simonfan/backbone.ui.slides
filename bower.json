@@ -2,7 +2,9 @@
   "name": "backbone.ui.slides",
   "version": "0.0.1",
   "dependencies": {
-    "backbone.statefulview": "simonfan/backbone.statefulview"
+    "backbone": "~1.0.0",
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2"
   },
   "main": "backbone.ui.slides.js"
 }

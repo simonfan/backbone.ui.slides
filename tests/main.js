@@ -7,9 +7,6 @@ require.config({
 		'underscore': 'components/underscore/underscore',
 		'backbone': 'components/backbone/backbone',
 
-		'_.asynch': 'components/_.asynch/_.asynch',
-		'backbone.statefulview': 'components/backbone.statefulview/backbone.statefulview',
-
 		// the module files go here
 		'backbone.ui.slides': '../backbone.ui.slides',
 
